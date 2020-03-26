@@ -1,18 +1,9 @@
 def oxford_comma(array)
-if array.size = 1 
-  do array.join
-  elsif 
-  array.size = 2
-  do array.join("and")
-  elsif
-  array.size = 3
-  do 
-    if array.index = 0
-      puts "#{array(0)},"
-    else
-      puts "#{array(1)}, and"
-    end
-  else
-    if array.index >= 0
-      puts 
+  if array.count == 1
+    array
+    elsif array.count == 2
+    array.join(" and ")
+  else array[-1] = "and #{array[-1]}"
+    array.join(", ")
+  end
 end
